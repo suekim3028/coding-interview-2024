@@ -42,6 +42,8 @@
 # 3
 
 
+
+# TODO: 제한 더 만들기
 def try1():
     # 세로 n, 가로 m,
     # row A, col B
@@ -84,3 +86,5 @@ def try1():
             col += next[1];     
     print(res)
 try1();
+
+
