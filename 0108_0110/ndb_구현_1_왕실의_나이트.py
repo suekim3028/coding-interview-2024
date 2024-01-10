@@ -63,4 +63,20 @@ def try1():
     print(res);
 
 
-try1();
+
+def try2():
+    position = input();
+    col = "abcdefgh".index(position[0]);
+    row= int(position[1])-1;
+
+    movement = [(2,-1), (2,1), (-2,-1), (2,-1), (1,-2),(1,2),(-1,2),(-1,-2)];
+    res = 0;
+    for x,y in movement:
+        if(0<= col+x <=7 and 0<=row+y<=7):
+            res+=1; 
+
+
+    print(res);
+
+
+try2();
