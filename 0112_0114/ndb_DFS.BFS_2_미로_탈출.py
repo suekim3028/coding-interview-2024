@@ -18,8 +18,9 @@
 # 출력 예시
 # 10
 from collections import deque
-# 2024-01-14T10:55:52.208Z
 def try1():
+# 2024-01-14T10:55:52.208Z
+# 2024-01-14T11:29:13.328Z
     n,m = map(int, input().split())
     board = []
     visited=[]
