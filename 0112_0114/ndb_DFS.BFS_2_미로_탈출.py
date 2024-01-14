@@ -17,8 +17,39 @@
 
 # 출력 예시
 # 10
-
+from collections import deque
+# 2024-01-14T10:55:52.208Z
 def try1():
-    return;
+    n,m = map(int, input().split())
+    board = []
+    visited=[]
+    for _i in range(n):
+        row = list(map(int, list(input())));
+        board.append(row)
+        visited.append([0 if x == 1 else 1 for x in row]);
+
+    # 아래나 오른쪽으로 무조건 가고 없는 경우만 위 혹은 왼쪽으로 가야함?
+    
+    def bfs(graph,  visited):
+        visited[0][0] = True
+        queue = deque([(0,0)])
+        res = 1
+        while(queue):
+            curr_row, curr_col = queue.popleft()
+            print(curr_row, curr_col)
+            if(curr_row == n-1 and curr_col == m-1):
+                break
+
+            for i,j in [(curr_row, curr_col+1),(curr_row+1, curr_col), (curr_row,curr_col-1), (curr_row-1,curr_col)]:
+                if(i>=n or j>=m or visited[i][j]==True):
+                    continue
+                else:
+                    queue.append((i,j))
+                    visited[i][j] = True
+                    res+=1
+                    break
+        return res
+    
+    print(bfs(board,  visited))
 
 try1()
