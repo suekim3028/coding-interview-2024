@@ -25,7 +25,7 @@ import datetime
 # 이진탐색에서 같은 수가 아닌 크거나 작은 수 찾는 연습
 def try1():
     # 2024-01-19 00:12:59.501282
-    # 2024-01-19 00:08:25.629532
+    # 2024-01-19 01:04:33.465887
     
     i,j = map(int, input().split())
     arr = list( map(int, input().split()))
@@ -37,7 +37,7 @@ def try1():
 
 
     # 10 15 17 19
-    
+
     while(h>=1):        
         start = 0;
         end = i-1; 
