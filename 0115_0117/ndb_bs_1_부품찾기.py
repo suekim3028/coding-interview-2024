@@ -34,9 +34,10 @@ import datetime
 # input_data = sys.stdin.readline().rstrip()
 
 # 개수가 1000만 이상이거나 범위가 1000억 이상이면 이진탐색 고려
+# TODO: 계수정렬 or set으로 풀어보기
 def try1():
     # 2024-01-18 23:52:45.616125
-    # 2024-01-18 21:48:03.221246
+    # 2024-01-19 00:08:25.629532
     i = int(input())
     a = list(map(int, input().split()));
     j = int(input());
