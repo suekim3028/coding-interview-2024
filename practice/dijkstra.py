@@ -1,76 +1,63 @@
 import sys
 input = sys.stdin.readline
-import heapq
+
+
+# 방문한 노드들에 대한 정보 가짐
+# 각 노드들에 대한 최단 거리 가짐 -> INF 로 초기화
+# 방문 안한 노드들 중 최단 거리인 애 꺼내서 방문
+# 해당 노드
+
 
 def try1():
     INF = int(10e9)
-    n,m = map(int , input().split())
-    start = int(input())
-    graph = [[] for i in range(n+1)]
-    dist_arr = [INF]*(n+1)
-
-    for _i in range(m):
-        from_node, to_node, dist = map(int, input().split()) 
-        graph[from_node].append([to_node, dist])
-    
-    print(graph)
-    def dijkstra(start):
-        q = []
-        heapq.heappush(q, (start,0))
-        dist_arr[start] = 0
-
-        while q:
-            from_node, now_dist = heapq.heappop(q)
-            print("from_node: ", from_node, ", now_dist: ", now_dist )
-            if(dist_arr[from_node]<now_dist): 
-                continue
-            for i in graph[from_node]:
-                to_node = i[0]
-                _dist = i[1]
-                if(dist_arr[to_node]>now_dist + _dist):
-                    dist_arr[to_node]=now_dist+_dist
-                    heapq.heappush(q, (to_node, now_dist+_dist))
-    
-    dijkstra(start)
-    for i in dist_arr:
-        print("INFINITY" if i == INF else i)
-            
-
-def test2():
-    
-    INF = int(10e9)
-    n, m = map(int, input().split())
+    n,m = map(int,input().split())
     start = int(input())
 
-    print("===========")
+    graph = [[] for _ in range(n+1)]
+    visited = [False]  * (n+1)
+    dist = [INF] * (n+1)
+
+    for i in range(m):
+        from_n, to_n, d= map(int, input().split())
+        graph[from_n].append((to_n,d))
+
     
-    graph = [[] for _i in range(m+1)]
-    dist_arr = [INF] * (m+1)
-    for _i_ in range(m):
-        from_node, to_node, dist = map(int, input().split())
-        graph[from_node].append([to_node, dist])
+    dist[start] = 0
+    visited[start] = True
+
+    for to_n, d in graph[start]:
+        dist[to_n] = d
+
+    def getSmallest():
+        smallest= INF
+        index = 0
+        for i in range(1,n+1):
+            if(visited[i]==False):
+                if(dist[i]<smallest):
+                    smallest = dist[i]
+                    index = i
+        return index
     
-    def dijkstra(start):
-        q = []
-        dist_arr[start] = 0
-        heapq.heappush(q, [start, 0])
+    while(False in visited):
+        smallest = getSmallest()
+        visited[smallest] = True
+    
+        for to_n, d in graph[smallest]:
+            if(dist[to_n] > dist[smallest] + d):
+                dist[to_n] = dist[smallest] + d
+
+    print(dist)
         
-        while q: 
-            destination, min_dist = heapq.heappop(q)
-            if(dist_arr[destination]<min_dist):
-                continue
-            
-            for [to_node, dist] in graph[destination]:
-                new_dist = dist + min_dist
-                if(dist_arr[to_node]>new_dist):
-                    dist_arr[to_node] = new_dist
-                    heapq.heappush(q, [to_node, new_dist])
-        for i in dist_arr:
-            print("INFINITY" if i==INF else i)
-            
-    dijkstra(start)
-    
-    
-test2()
+
+
+
+try1()
+
+
+
+
+
+
+
 
 
