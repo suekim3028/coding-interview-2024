@@ -61,9 +61,6 @@ def try1():
             indegrees[lecture]+=1
 
 
-    print(times)
-    print(edges)
-    print(indegrees)
     q = deque()
     for i in range(1,n+1):
         if(indegrees[i]==0):
@@ -79,7 +76,6 @@ def try1():
             if(indegrees[to_n]==0):
                 q.append(to_n)
 
-    print("=====")
     for i in range(1, n+1):
         print(res[i])
 
