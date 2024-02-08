@@ -41,6 +41,7 @@
 
 import datetime
 from collections import deque
+import copy 
 
 def try1():
     # 2024-02-09 00:19:26.457311
@@ -73,7 +74,7 @@ def try1():
     while(q):
         from_n = q.popleft()
         for to_n in edges[from_n]:
-            res[to_n] = times[to_n]+res[from_n] if res[to_n]==times[to_n] else min(res[to_n], times[to_n]+res[from_n])
+            res[to_n] = max(res[to_n], res[from_n]+times[to_n])
             indegrees[to_n] -= 1
             if(indegrees[to_n]==0):
                 q.append(to_n)
