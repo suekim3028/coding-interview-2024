@@ -20,11 +20,12 @@ def find_parent(parent, x):
     return parent[x]
 
 def union(parent, x,y):
-    min_p = min(find_parent(parent, x), find_parent(parent, y))
-    parent[x] = min_p
-    parent[y] = min_p
-
-
+    x_p = find_parent(parent, x)
+    y_p = find_parent(parent, y)
+    if(x_p<y_p):
+        parent[y_p] = x_p
+    else:
+        parent[x_p] = y_p
 
 for i in range(1, v+1):
     parent[i] = i
