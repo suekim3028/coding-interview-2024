@@ -97,7 +97,7 @@
 
 #### 16장 다이나믹 프로그래밍
 
-* 금광 (Flipkart 인터뷰 기출): ([Python 3.7 코드](/16/1.py) / [C++ 코드](/16/1.cpp) / [Java 코드](/16/1.java))
+* <s>금광 (Flipkart 인터뷰 기출): ([Python 3.7 코드](/16/1.py) / [C++ 코드](/16/1.cpp) / [Java 코드](/16/1.java))</s>
 * [정수 삼각형](https://www.acmicpc.net/problem/1932) (IOI): ([Python 3.7 코드](/16/2.py) / [C++ 코드](/16/2.cpp) / [Java 코드](/16/2.java))
 * [퇴사](https://www.acmicpc.net/problem/14501) (삼성): ([Python 3.7 코드](/16/3.py) / [C++ 코드](/16/3.cpp) / [Java 코드](/16/3.java))
 * [병사 배치하기](https://www.acmicpc.net/problem/18353) (핵심 유형): ([Python 3.7 코드](/16/4.py) / [C++ 코드](/16/4.cpp) / [Java 코드](/16/4.java))
