@@ -73,7 +73,7 @@
 #### 13장 DFS/BFS
 
 * <s>[특정 거리의 도시 찾기](https://www.acmicpc.net/problem/18352) (핵심 유형): ([Python 3.7 코드](/13/1.py) / [C++ 코드](/13/1.cpp) / [Java 코드](/13/1.java))</s>
-* [연구소](https://www.acmicpc.net/problem/14502) (삼성): ([Python 3.7 코드](/13/2.py) / [C++ 코드](/13/2.cpp) / [Java 코드](/13/2.java))
+* <s>[연구소](https://www.acmicpc.net/problem/14502) (삼성): ([Python 3.7 코드](/13/2.py) / [C++ 코드](/13/2.cpp) / [Java 코드](/13/2.java))</s>
 * [경쟁적 전염](https://www.acmicpc.net/problem/18405) (핵심 유형): ([Python 3.7 코드](/13/3.py) / [C++ 코드](/13/3.cpp) / [Java 코드](/13/3.java))
 * [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058) (카카오): ([Python 3.7 코드](/13/4.py) / [C++ 코드](/13/4.cpp) / [Java 코드](/13/4.java))
 * [연산자 끼워 넣기](https://www.acmicpc.net/problem/14888) (삼성): ([Python 3.7 코드](/13/5.py) / [C++ 코드](/13/5.cpp) / [Java 코드](/13/5.java))
