@@ -84,7 +84,7 @@
 #### 14장 정렬
 
 * <s>[국영수](https://www.acmicpc.net/problem/10825) (핵심 유형): ([Python 3.7 코드](/14/1.py) / [C++ 코드](/14/1.cpp) / [Java 코드](/14/1.java))</s>
-* [안테나](https://www.acmicpc.net/problem/18310) (국내 S 교육 기관 선발 평가): ([Python 3.7 코드](/14/2.py) / [C++ 코드](/14/2.cpp) / [Java 코드](/14/2.java))
+* <s>[안테나](https://www.acmicpc.net/problem/18310) (국내 S 교육 기관 선발 평가): ([Python 3.7 코드](/14/2.py) / [C++ 코드](/14/2.cpp) / [Java 코드](/14/2.java))</s>
 * [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) (카카오): ([Python 3.7 코드](/14/3.py) / [C++ 코드](/14/3.cpp) / [Java 코드](/14/3.java))
 * [카드 정렬하기](https://www.acmicpc.net/problem/1715) (핵심 유형): ([Python 3.7 코드](/14/4.py) / [C++ 코드](/14/4.cpp) / [Java 코드](/14/4.java))
 
