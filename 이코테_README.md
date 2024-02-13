@@ -91,7 +91,7 @@
 #### 15장 이진 탐색
 
 * <s>정렬된 배열에서 특정 수의 개수 구하기 (Zoho 인터뷰 기출): ([Python 3.7 코드](/15/1.py) / [C++ 코드](/15/1.cpp) / [Java 코드](/15/1.java)) </s>
-* 고정점 찾기 (Amazon 인터뷰 기출): ([Python 3.7 코드](/15/2.py) / [C++ 코드](/15/2.cpp) / [Java 코드](/15/2.java))
+* <s>고정점 찾기 (Amazon 인터뷰 기출): ([Python 3.7 코드](/15/2.py) / [C++ 코드](/15/2.cpp) / [Java 코드](/15/2.java))</s>
 * [공유기 설치](https://www.acmicpc.net/problem/2110) (핵심 유형): ([Python 3.7 코드](/15/3.py) / [C++ 코드](/15/3.cpp) / [Java 코드](/15/3.java))
 * [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) (카카오): ([Python 3.7 코드](/15/4.py) / [C++ 코드](/15/4.cpp) / [Java 코드](/15/4.java))
 
